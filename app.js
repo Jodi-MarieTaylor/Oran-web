@@ -10,7 +10,7 @@ app.use("/assets/css", express.static("./assets/css"))
 app.use("/assets/js", express.static("./assets/js"))
 app.use("/assets/images", express.static("./assets/images"))
 app.use("/assets/fonts", express.static("./assets/fonts"))
-app.use("/assets/js", express.static(__dirname + '/js'));
+app.use("/plugins", express.static("./plugins"))
 console.log(express.static('./js'))
 
 console.log("Server started");
