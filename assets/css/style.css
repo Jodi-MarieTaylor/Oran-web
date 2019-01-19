@@ -145,7 +145,9 @@ input[type="color"],
     border-color: #bcefeb;
 }
 
-h1,
+h1{
+    font-family: 'times new roman';/*oran font*/
+}
 h2,
 h3 {
     font-weight: 300;
@@ -281,7 +283,7 @@ ul{
     height: 670px;
 }
 .map-overlay {
-    background-color: rgba(255, 114, 0, 0.75);
+    background-color: #52c0fc; /*rgba(255, 114, 0, 0.75);*/
     width: 100%;
     height:auto;
 }
@@ -349,7 +351,7 @@ Separator
     height: 2px;
     width: 30px;
     margin:20px 0px;
-    background: #f38181;
+    background: #52c0fc; /*#f38181;*/
 }
 /*section:nth-of-type(odd) {
     background-color: #F9F9F9;
@@ -403,7 +405,7 @@ Button
 }
 
 .btn-primary {
-    background-color: #52c0fc;
+    background-color: #205198; /*#52c0fc;*/
     transition: .5s;
     padding: 9px 30px;
 }
@@ -589,7 +591,7 @@ input::-ms-input-placeholder {
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
     background-color:transparent;
-    color:#f5c239;
+    color:#52c0fc; /*#f5c239;*/
 
 }
 
@@ -656,7 +658,7 @@ input::-ms-input-placeholder {
     margin-bottom:20px;
 }
 .home .main_home p{
-    color: #fff;
+    color: #52c0fc;
     max-width: 60%;
     margin: 0 auto;
     padding-bottom: 30px;
@@ -1024,7 +1026,7 @@ input::-ms-input-placeholder {
     position: absolute;
     left: 15%;
     top: 30%;
-    background: rgba(255, 114, 0, 0.75);
+    background: #52c0fc;/*rgba(255, 114, 0, 0.75);*/
     padding: 10px 20px;
     width:70%;
     opacity:0;
@@ -1184,7 +1186,7 @@ button.btn-md:hover {
     top:10%;
     width:80%;
     height: 80%;
-    background: rgba(255, 114, 0, 0.75);
+    background: #52c0fc;/*rgba(255, 114, 0, 0.75);*/
     color:#fff;
     padding: 20px;
     opacity: 0;
@@ -1553,7 +1555,7 @@ button.btn-md:hover {
 }
 .copyright_text p i{
     padding:0px 10px;
-    color:#ff0000;
+    color:#52c0fc;/*#ff0000;*/
 }
 .copyright_text p a{
     padding:0px 10px;
