@@ -1,0 +1,93 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "name": "propert 1",
+      "file": "assets/images/pictures/nic.jpg",
+      "type": "Rent",
+      "description": "2 bdr/ bath",
+      "location": {
+        "address": "48 west mead",
+        "city": "kingston 9"
+      }
+    },
+    {
+      "id": 2,
+      "name": "propert 2",
+      "file": "assets/images/pictures/nic2.jpg",
+      "type": "Rent",
+      "description": "2 bdr/ bath",
+      "location": {
+        "address": "48 west mead",
+        "city": "kingston 9"
+      }
+    },
+    {
+      "id": 3,
+      "name": "property 3",
+      "file": "assets/images/pictures/oran1.png",
+      "type": "Rent",
+      "description": "2 bdr/ bath",
+      "location": {
+        "address": "48 west mead",
+        "city": "kingston 9"
+      }
+    },
+    {
+      "id": 4,
+      "name": "property 4",
+      "file": "assets/images/pictures/backyaad bbq.jpeg",
+      "type": "Rent",
+      "description": "2 bdr/ bath",
+      "location": {
+        "address": "48 west mead",
+        "city": "kingston 9"
+      }
+    },
+    {
+      "id": 5,
+      "name": "property 5",
+      "file": "assets/images/pictures/funch.jpeg",
+      "type": "Rent",
+      "description": "2 bdr/ bath",
+      "location": {
+        "address": "48 west mead",
+        "city": "kingston 9"
+      }
+    },
+    {
+      "id": 6,
+      "name": "property 6",
+      "file": "assets/images/pictures/22IHH-TELAVIV-slide-4OZ8-articleLarge.jpg",
+      "type": "Rent",
+      "description": "2 bdr/ bath",
+      "location": {
+        "address": "48 west mead",
+        "city": "kingston 9"
+      }
+    },
+    {
+      "id": 7,
+      "name": "property 7",
+      "file": "assets/images/pictures/download (1).jpg",
+      "type": "Rent",
+      "description": "2 bdr/ bath",
+      "location": {
+        "address": "48 west mead",
+        "city": "kingston 9"
+      }
+    },
+    {
+      "id": 8,
+      "name": "property 8",
+      "file": "assets/images/pictures/download.jpg",
+      "type": "Rent",
+      "description": "2 bdr/ bath",
+      "location": {
+        "address": "48 west mead",
+        "city": "kingston 9"
+      }
+    }
+  ],
+  "count": 8
+}

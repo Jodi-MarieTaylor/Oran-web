@@ -22,6 +22,9 @@
   "homepage": "https://github.com/Jodi-MarieTaylor/Oran-web#readme",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.1-alpha.1",
+    "filestorage": "^1.7.1",
+    "lowdb": "^1.0.0"
   }
 }
