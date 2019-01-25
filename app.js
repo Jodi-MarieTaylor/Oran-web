@@ -12,6 +12,8 @@ app.use("/assets/images", express.static("./assets/images"))
 app.use("/assets/fonts", express.static("./assets/fonts"))
 app.use("/plugins", express.static("./plugins"))
 var storage_images = require('filestorage').create('/assets/pictures/');
+var nodemailer = require('nodemailer');
+
 console.log(express.static('./js'))
 
 
@@ -48,6 +50,42 @@ app.get("/", function(req, res) {
    //res.sendFile(__dirname + "/index.html")
 })
 
+
+app.get("/admin/properties/manage", function(req, res) {
+    // get properties
+    var t = db.get('properties')
+    .sortBy('id')
+    .value()
+    //console.log(t);
+    res.render('admin-manage.ejs', {
+       properties : t,
+   
+      
+     });
+    //res.sendFile(__dirname + "/index.html")
+ })
+ app.get('/admin', function(req, res) {
+  
+
+   res.redirect('/admin/properties/manage');
+
+})
+ app.get('/delete/:id', function(req, res) {
+     var id = parseInt(req.params.id)
+    var t = db.get('properties')
+    .remove({ id: id })
+    .write()
+
+    
+    // Decrement count
+    db.update('count', n => n - 1)
+      .write()
+    
+
+    res.redirect('/admin/properties/manage');
+
+ })
+
 app.post('/upload', function(req, res) {
    if (Object.keys(req.files).length == 0) {
      return res.status(400).send('No files were uploaded.');
@@ -65,7 +103,7 @@ app.post('/upload', function(req, res) {
          .value()
     id = id + 1
     db.get('properties')
-      .push({ id: id, name: 'property ' + id, file: 'assets/images/pictures/' + sampleFile.name , type: 'Rent', description: '2 bdr/ bath', location: {address: '48 west mead', city: 'kingston 9'} })
+      .push({ id: id, name: req.body.name, file: 'assets/images/pictures/' + sampleFile.name , type: req.body.type, description: req.body.description, location: {address: req.body.address, city: req.body.city} })
       .write()
 
     // Increment count
@@ -74,8 +112,43 @@ app.post('/upload', function(req, res) {
      if (err)
        return res.status(500).send(err);
  
-     res.send('File uploaded!');
+     res.redirect('/admin/properties/manage');
+
    });
  });
+
+
+
+app.post('/sendemail', function(req, res) {
+
+    console.log('body' , req.body);
+    console.log('params', req.params)
+    var transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+          user: 'negusmultimedia@gmail.com',
+          pass: 'january1'
+        }
+      });
+      
+      var mailOptions = {
+        from: req.body.email,
+        to: 'jodimarietaylor18@gmail.com',
+        subject: 'Oran Web - Request for Valuation ' + req.body.subject,
+        text: req.body.message
+      };
+      
+      transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+          console.log(error);
+        } else {
+          console.log('Email sent: ' + info.response);
+          res.redirect('/');
+
+        }
+      });
+ });
+ 
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log('Listening on port ${port}'));
