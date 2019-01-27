@@ -70,6 +70,29 @@ app.get("/admin/properties/manage", function(req, res) {
    res.redirect('/admin/properties/manage');
 
 })
+
+
+
+app.get("/property/:id", function(req, res) {
+    // get properties
+    console.log("in here")
+    var id = parseInt(req.params.id)
+    var t = db.get('properties')
+    .find({ id: id })
+    .value()
+    console.log(t);
+    //let jsonData = JSON.parse(t); 
+    res.send(t);
+
+
+    //res.sendFile(__dirname + "/index.html")
+ })
+ app.get('/admin', function(req, res) {
+  
+
+   res.redirect('/admin/properties/manage');
+
+})
  app.get('/delete/:id', function(req, res) {
      var id = parseInt(req.params.id)
     var t = db.get('properties')
@@ -91,30 +114,52 @@ app.post('/upload', function(req, res) {
      return res.status(400).send('No files were uploaded.');
    }
  
+   //upload main image
    // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
    let sampleFile = req.files.sampleFile;
  
+   
    // Use the mv() method to place the file somewhere on your server
    sampleFile.mv('./assets/images/pictures/' + sampleFile.name, function(err) {
+    if (err)
+        return res.status(500).send(err);
 
+    });
+   
+    //upload the rest of images
+    var myArray = req.files.images
+    var images = []; 
+    myArray.forEach(function(value){
+      console.log('values name ' ,value.name);
+      images.push('./assets/images/pictures/' + value.name)
+      value.mv('./assets/images/pictures/' + value.name, function(err) {
+        
+        if (err)
+             return res.status(500).send(err);
+        });
+    });
+
+    console.log("images list", images)
     // get count 
     var id =   db.get('properties')
          .size()
          .value()
     id = id + 1
     db.get('properties')
-      .push({ id: id, name: req.body.name, file: 'assets/images/pictures/' + sampleFile.name , type: req.body.type, description: req.body.description, location: {address: req.body.address, city: req.body.city} })
+      .push({ id: id, name: req.body.name, file: 'assets/images/pictures/' + sampleFile.name , file_list: images,  type: req.body.type, description: req.body.description, location: {address: req.body.address, city: req.body.city} })
       .write()
 
     // Increment count
     db.update('count', n => n + 1)
       .write()
-     if (err)
-       return res.status(500).send(err);
+    if (err){
+        return res.status(500).send(err);
+    }
+     
  
      res.redirect('/admin/properties/manage');
 
-   });
+
  });
 
 
