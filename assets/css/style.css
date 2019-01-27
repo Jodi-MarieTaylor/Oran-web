@@ -286,7 +286,7 @@ Author URI: http://bootstrapthemes.co
            height: 670px;
        }
        .map-overlay {
-           background-color: #52c0fc; /*rgba(255, 114, 0, 0.75);*/
+           background-color: #eeba0c; /*rgba(255, 114, 0, 0.75);*/
            width: 100%;
            height:auto;
        }
@@ -340,7 +340,7 @@ Author URI: http://bootstrapthemes.co
            bottom:0;
            height: 2px;
            width: 70px;
-           background: #52c0fc;
+           background: #eeba0c;
            content:"";
        }
        
@@ -355,7 +355,7 @@ Author URI: http://bootstrapthemes.co
            height: 2px;
            width: 30px;
            margin:20px 0px;
-           background: #52c0fc; /*#f38181;*/
+           background: #eeba0c; /*#f38181;*/
        }
        /*section:nth-of-type(odd) {
            background-color: #F9F9F9;
@@ -395,9 +395,9 @@ Author URI: http://bootstrapthemes.co
            font-size:0.8125rem;
            border-radius: 0px;
            margin-top: 20px;
-           background-color: #52c0fc;
+           background-color: #eeba0c;
            transition: .5s;
-           border: 1px solid #52c0fc;
+           border: 1px solid #eeba0c;
            font-family: 'montserratregular';
        
        }
@@ -409,7 +409,7 @@ Author URI: http://bootstrapthemes.co
        }
        
        .btn-primary {
-           background-color: #205198; /*#52c0fc;*/
+           background-color: #205198; /*#eeba0c;*/
            transition: .5s;
            padding: 9px 30px;
        }
@@ -566,15 +566,16 @@ Author URI: http://bootstrapthemes.co
            margin: 15px auto;
        }
        .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
-           color:#52c0fc;
+           color:#eeba0c;
            background: transparent;
        }
        .main_menu_bg .navbar {}
        
        .main_menu_bg .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
-           color: #52c0fc;
+          /* color: #52c0fc;*/
+          color: #eeba0c;
            padding-bottom: 22px;
-           border-bottom: 1px solid #52c0fc;
+           border-bottom: 1px solid #eeba0c;
            background: transparent;
        
        }
@@ -595,7 +596,7 @@ Author URI: http://bootstrapthemes.co
        }
        .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
            background-color:transparent;
-           color:#52c0fc; /*#f5c239;*/
+           color:#eeba0c; /*#f5c239;*/
        
        }
        
@@ -618,12 +619,12 @@ Author URI: http://bootstrapthemes.co
        
        .dropdown-menu .navbar-form .form-group input[type="text"]{
            background-color:rgba(34, 61, 97, 0.68);
-           border: 1px solid #52c0fc;
-           color:#52c0fc;
+           border: 1px solid #eeba0c;
+           color:#eeba0c;
            width: 300px;
        }
        .dropdown-menu .navbar-form .form-group .form-control::-webkit-input-placeholder{
-           color: #52c0fc;
+           color: #eeba0c;
            opacity: 1; 
        }
        .dropdown-menu .navbar-form {
@@ -648,7 +649,7 @@ Author URI: http://bootstrapthemes.co
        
        /*home section*/
        .home{
-           background: url(../images/BKG2.jpg) no-repeat 100% 100%;
+           background: url(../images/BKG3.jpg) no-repeat 100% 100%;
            background-size: cover;
        }
        
@@ -662,7 +663,7 @@ Author URI: http://bootstrapthemes.co
            margin-bottom:20px;
        }
        .home .main_home p{
-           color: #52c0fc;
+           color: #eeba0c;
            max-width: 60%;
            margin: 0 auto;
            padding-bottom: 30px;
@@ -682,7 +683,7 @@ Author URI: http://bootstrapthemes.co
        }
        
        .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-           background: #52c0fc;
+           background: #eeba0c;
        }
        .owl-theme .owl-dots .owl-dot span {
            -webkit-border-radius: 0px;
@@ -738,6 +739,8 @@ Author URI: http://bootstrapthemes.co
        .service_tabe ul li a i{
            font-size:2rem;
            margin-top:40px;
+           color: #444;
+
            margin-bottom:25px;
        }
        
@@ -913,7 +916,7 @@ Author URI: http://bootstrapthemes.co
        }
        
        .skillbar-bar.blue {
-           background-color: #52c0fc;
+           background-color: #eeba0c;
            height: 5px;
            width: 0;
        }
@@ -939,7 +942,7 @@ Author URI: http://bootstrapthemes.co
            font-size:2.8125rem;
        }
        .counter .main_counter_area .single_counter i{
-           color:#52c0fc;
+           color:#eeba0c;
            font-size:1.875rem;
            display: inline-block;
            margin-top:20px;
@@ -1027,7 +1030,7 @@ Author URI: http://bootstrapthemes.co
            position: absolute;
            left: 15%;
            top: 30%;
-           background: #52c0fc;/*rgba(255, 114, 0, 0.75);*/
+           background: #eeba0c;/*rgba(255, 114, 0, 0.75);*/
            padding: 10px 20px;
            width:70%;
            opacity:0;
@@ -1052,7 +1055,7 @@ Author URI: http://bootstrapthemes.co
        }
        .team .single_team_content .single_team_text_overlay .team_overlay_socail a:hover i{
            background: #fff;
-           color:#52c0fc;
+           color:#eeba0c;
        }
        
        
@@ -1090,7 +1093,6 @@ Author URI: http://bootstrapthemes.co
        
        }
        .choose .main_choose .single_choose .single_choose_acording .panel-title a i{
-           color: #444444;
            font-size: 1.575rem;
            display: inline-block;
            margin-right: 15px;
@@ -1118,7 +1120,7 @@ Author URI: http://bootstrapthemes.co
        }
        button.btn-md:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus{
            outline:none;
-           color:#52c0fc;
+           color:#eeba0c;
        }
        button.btn-md {
            text-align: center;
@@ -1130,12 +1132,12 @@ Author URI: http://bootstrapthemes.co
            margin-top: 0px;
            background-color: transparent;
            transition: .5s;
-           border: 0px solid #52c0fc;
+           border: 0px solid #eeba0c;
            font-family: 'montserratregular';
        }
        button.btn-md:hover {
            background-color: transparent;
-           color: #52c0fc;
+           color: #eeba0c;
            text-decoration: none;
            border: 0px solid #f4720a;
        }
@@ -1186,7 +1188,7 @@ Author URI: http://bootstrapthemes.co
            top:10%;
            width:80%;
            height: 80%;
-           background: #52c0fc;/*rgba(255, 114, 0, 0.75);*/
+           background: #eeba0c;/*rgba(255, 114, 0, 0.75);*/
            color:#fff;
            padding: 20px;
            opacity: 0;
@@ -1223,7 +1225,7 @@ Author URI: http://bootstrapthemes.co
            background: transparent;
        }
        .grid_item_overlay a:hover i{
-           color:#52c0fc;
+           color:#eeba0c;
            background: #fff;
        }
        
@@ -1458,7 +1460,7 @@ Author URI: http://bootstrapthemes.co
            line-height: 1.4rem;
        }
        .single_widget ul li a:hover{
-           color:#52c0fc;
+           color:#eeba0c;
        }
        
        .footer_logo{
@@ -1538,8 +1540,8 @@ Author URI: http://bootstrapthemes.co
            margin-top:10px;
        }
        .footer .flowus a i:hover{
-           color:#52c0fc;
-           border:1px solid #52c0fc;
+           color:#eeba0c;
+           border:1px solid #eeba0c;
        }
        
        .copyright_text{
@@ -1553,11 +1555,11 @@ Author URI: http://bootstrapthemes.co
        }
        .copyright_text p i{
            padding:0px 10px;
-           color:#52c0fc;/*#ff0000;*/
+           color:#eeba0c;/*#ff0000;*/
        }
        .copyright_text p a{
            padding:0px 10px;
-           color:#52c0fc;
+           color:#eeba0c;
        }
        
        
@@ -1582,7 +1584,7 @@ Author URI: http://bootstrapthemes.co
        }
        
        .scrollup:hover {
-           background: #52c0fc;
+           background: #eeba0c;
            opacity: 1;
        }
        
@@ -1600,9 +1602,13 @@ Author URI: http://bootstrapthemes.co
        }
        
        
+       i {
+           color: #eeba0c;
+       }
        
-       
-       
-       
-       
-       
+       @media only screen and (max-width: 600px) {
+        .service .nav-tabs>li>a {
+            width: 110px;
+            font-size: 95%;
+        }
+    }

@@ -33,7 +33,18 @@
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
+
     <body data-spy="scroll" data-target=".navbar-collapse">
+        <style>
+                  
+  
+                  @media only screen and (max-width: 600px) {
+        .service .nav-tabs>li>a {
+            width: 140px;
+            font-size: 95%;
+        }
+    }
+        </style>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -72,21 +83,7 @@
                                                 <li><a href="#testimonial">Why Us</a></li>
 												<li><a href="#portfolio">Featured Properties</a></li>
                                                 <li><a href="#contact">Request Valuation</a></li>
-                                                
-                                                
-                                                <li>
-                                                    <a href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                                        <span class="glyphicon glyphicon-search"></span></a>
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <form class="navbar-form" role="search">
-                                                                <div class="form-group">
-                                                                    <input type="text" class="form-control" placeholder="Search">
-                                                                </div>
-                                                            </form>
-                                                        </li>
-                                                    </ul>
-                                                </li>
+                                             
                                             </ul>
 
 
@@ -448,8 +445,8 @@
                                                     <div class="about_tabe">
                                                         <!-- Nav tabs -->
                                                         <ul class="about_tabe_menu" role="tablist">
-                                                           <li role="presentation" class="active"><a href="#mission" aria-controls="mission" role="tab" data-toggle="tab"><font size="3">Affiliations</font></a></li>
-                                                           <li role="presentation"><a href="#goal" aria-controls="goal" role="tab" data-toggle="tab"><font size="3">Our Mission</font></a></li>
+                                                           <li role="presentation" class="active" ><a href="#mission" aria-controls="mission" role="tab" data-toggle="tab" style="width: 135px;"><font size="3">Affiliations</font></a></li>
+                                                           <li role="presentation"><a href="#goal" aria-controls="goal" role="tab" data-toggle="tab"  style="width: 135px;"><font size="3">Our Mission</font></a></li>
                                                            <!-- <li role="presentation"><a href="#achivements" aria-controls="achivements" role="tab" data-toggle="tab">Achievements</a></li>
                                                             --> </ul>
     
@@ -916,7 +913,7 @@
                                             <div class="separator"></div>
                                         </div>
                                         <div class="single_contant_left">
-                                            <form action="/sendemail" method="POST" id="formid">
+                                            <form action="/sendemail" method="POST" encType="multipart/form-data">
                                                 <!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
 
                                               
@@ -951,26 +948,8 @@
                         </div>
                     </div>
             </section>  <!-- End of contact section -->
+       
 
-
-
-            <section id="maps" class="maps">
-                <div class="map-overlay">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="main_maps text-center">
-                                <div class="col-sm-12 no-padding">
-                                    <div class="map_canvas_icon">
-                                        <i class="fa fa-map-marker" onClick="showmap()"></i>
-                                        <h2 onClick="showmap()">FIND US ON GOOGLE MAP</h2>
-                                    </div>
-                                    <div id="map_canvas"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
 
 
@@ -986,9 +965,7 @@
                                                 <div class="footer_logo">
                                                     <img src="assets/images/oran2.png" alt="" />
                                                 </div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                                    nisi ut aliquip ex ea commodo consequat. </p>
+                                                <p>We are for Quality. </p>
 
                                             </div>
                                         </div>
@@ -1001,30 +978,15 @@
                                                     <div class="separator"></div>
                                                 </div>
                                                 <ul>
-                                                    <li><a href="">Services</a></li>
-                                                    <li><a href="">About Us</a></li>
-                                                    <li><a href="">Our Team</a></li>
-                                                    <li><a href="">Portfolio</a></li>
+                                                    <li><a href="#service">Services</a></li>
+                                                    <li><a href="#about">About Us</a></li>
+                                                    <li><a href="#testimonials">Properties</a></li>
+                                                    <li><a href="#contact">Contact Us</a></li>
                                                 </ul> 
                                             </div>
                                         </div>
 
-                                        <div class="col-sm-3  col-xs-12">
-                                            <div class="single_widget wow fadeIn" data-wow-duration="800ms">
-
-                                                <div class="footer_title">
-                                                    <h4>ACHIVES</h4>
-                                                    <div class="separator"></div>
-                                                </div>
-                                                <ul>
-                                                    <li><a href="">January 2015</a></li>
-                                                    <li><a href="">February 2015</a></li>
-                                                    <li><a href="">March 2015</a></li>
-                                                    <li><a href="">April 2015</a></li>
-                                                </ul> 
-                                            </div>
-                                        </div>
-
+                                       
                                         <div class="col-sm-3 col-xs-12">
                                             <div class="single_widget wow fadeIn" data-wow-duration="800ms">
 
@@ -1065,7 +1027,7 @@
 
                                     <div class="col-sm-6 col-xs-12">
                                         <div class="copyright_text">
-                                            <p class=" wow fadeInRight" data-wow-duration="1s">Made with <i class="fa fa-heart"></i> by <a href="http://bootstrapthemes.co">Bootstrap Themes</a>2016. All Rights Reserved</p>
+                                            <p class=" wow fadeInRight" data-wow-duration="1s">Website Developed by Codyst Solutions 2018 Copy Right</p>
                                         </div>
                                     </div>
 

@@ -130,7 +130,6 @@ app.post('/upload', function(req, res) {
     var myArray = req.files.images
     var images = []; 
     myArray.forEach(function(value){
-      console.log('values name ' ,value.name);
       images.push('./assets/images/pictures/' + value.name)
       value.mv('./assets/images/pictures/' + value.name, function(err) {
         
@@ -139,7 +138,6 @@ app.post('/upload', function(req, res) {
         });
     });
 
-    console.log("images list", images)
     // get count 
     var id =   db.get('properties')
          .size()
