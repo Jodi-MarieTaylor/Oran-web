@@ -229,6 +229,3 @@ $(document).on("scroll", function () {
         $("nav").removeClass("small");
     }
 });
-
-
-

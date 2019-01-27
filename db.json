@@ -1,0 +1,70 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "name": "Gratton Ave House",
+      "file": "assets/images/pictures/pf1.jpg",
+      "file_list": [
+        "./assets/images/pictures/download.jpg",
+        "./assets/images/pictures/pf6.jpg",
+        "./assets/images/pictures/w800x533.jpg"
+      ],
+      "type": "For Sale",
+      "description": "3 Bedroom 2 bath",
+      "location": {
+        "address": "2 Gratton Avenue, May Pen",
+        "city": "Clarendon"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Test Property 2",
+      "file": "assets/images/pictures/download (1).jpg",
+      "file_list": [
+        "./assets/images/pictures/download.jpg",
+        "./assets/images/pictures/FEATURED_IMAGE.jpg",
+        "./assets/images/pictures/house_for_sale_in_jamaica_coral_spring_falmouth_trelawny.jpg"
+      ],
+      "type": "For Sale",
+      "description": "2 Bedroom 1 bath",
+      "location": {
+        "address": "48 West Mead, Belgrade Heights",
+        "city": "Kingston 19"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Test Property 3",
+      "file": "assets/images/pictures/download.jpg",
+      "file_list": [
+        "./assets/images/pictures/download (1).jpg",
+        "./assets/images/pictures/FEATURED_IMAGE.jpg",
+        "./assets/images/pictures/house_for_sale_in_jamaica_coral_spring_falmouth_trelawny.jpg"
+      ],
+      "type": "For Sale",
+      "description": "4 Bedroom 2 bath",
+      "location": {
+        "address": "8 Lady Musgrave, Shop 7",
+        "city": "Kingston 5"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Test Property 4",
+      "file": "assets/images/pictures/w800x533.jpg",
+      "file_list": [
+        "./assets/images/pictures/download (1).jpg",
+        "./assets/images/pictures/pf1.jpg",
+        "./assets/images/pictures/pf6.jpg",
+        "./assets/images/pictures/w800x533.jpg"
+      ],
+      "type": "For Sale",
+      "description": "4 Bedroom 2 bath",
+      "location": {
+        "address": "48 West Mead, Belgrade Heights",
+        "city": "Kingston 19"
+      }
+    }
+  ],
+  "count": 4
+}
